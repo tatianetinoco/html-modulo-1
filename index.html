@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Introdução ao HTML Para Iniciantes</h1>
+    <hr />
+
+    
+    <p> Conceitos básicos de <strong><u>HTML</u> </strong>para iniciantes para criação de páginas na web.</p>
+    
+    <h2><i>Índice:</i></h2>
+    
+
+    <ul>
+        
+        <li><a href="#cs">O que são <i>Clients</i> e <i>Servers</i>?</a></li>
+        <li><a href="#html">O que é <i>HTML</i>?</a></li>
+        <li><a href="#estruturahtml">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Criando links em HTML</a></li>
+        <li><a href="#refencia">Links de referências</a></li>
+    </ul>
+
+    
+<br /><br />
+    <h2 id="cs" style="color: #610B0B;"> O que são <i>Clients</i> e <i>Servers</i> ?</h2>
+    <p>Servidor (<i>Servers</i>) é o computador no qual foi configurado em uma rede para oferecer <br />
+    algum tipo de serviço. Já o cliente (<i>Clients</i>), é o computador que está do outro lado, que foi <br />
+    configurado para utilizar o serviço que é oferecido pelo servidor. Neste caso, podemos<br />
+    afirmar então que o computador <strong> servidor é aquele que oferece um serviço </strong> e o <br />
+    computador <strong> cliente é aquele que utiliza um serviço</strong>. Por exemplo, ao acessarmos <br />
+    uma página da web, a mesma é disponibilizada a partir de um computador servidor. <br />
+    O nosso computador, chamado de cliente, irá realizar as solicitações de acesso às <br />
+    páginas da web que estão armazenadas em um servidor. É importante ressaltar que os <br />
+    computadores clientes também podem ser chamados de estações.
+<small> <a href="#inicio">Inicio</a></small>
+</p> 
+    <br />
+
+
+    <h2 id="html" style="color: #610B0B;">O que é HTML?</h2>
+    <p> <strong> HTML </strong> significa HiperText Markup Language (Linguagem de Marcação de Hipertexto) <br />
+    não é uma linguagem de programação, mas sim de marcação utilizada na construção de páginas <br />
+    na Web para estruturar o conteúdo. A página HTML é composta por elementos definidos através de tags.
+<small> <a href="#inicio">Inicio</a></small>
+</p>
+    <br />
+
+    <h2 id="estruturahtml" style="color: #610B0B;">Como é uma estrutura básica de um HTML?</h2>
+    <p>A estrutura básica de uma página HTML é formada pelas tags <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code> e a instrução <code>&lt;!DOCTYPE&gt;</code>. <br />
+    Indica como o conteúdo deve ser interpretado pelos navegadores.
+<small> <a href="#inicio">Inicio</a></small>
+</p> <br />
+    <br />
+
+    <h2 id="listas" style="color: #610B0B;">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>
+    A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que  <br />
+    os itens de cada lista são apresentados - a <u> <i> lista ordenada enumera os elementos </i> </u> e a <br />
+<u> <i>lista não-ordenada coloca marcadores antes de cada elemento. </i> </u> <br />
+
+    Uma lista ordenada é delimitada pelas etiquetas <code>&lt;ol&gt;</code> e <code>&lt;/ol&gt;</code> (Ordered List).  <br />
+    Cada item da lista é delimitado pelas etiquetas <code>&lt;li&gt;</code> e <code>&lt;/li&gt;</code> (List Item).  <br />
+
+    A estrutura da lista não-ordenada é semelhante a da lista ordenada - porém, ao invés  <br />
+    de ser construída com o elemento OL, é construída com o elemento UL (Unordered List).  <br />
+ <br />
+<code>
+    ol = ordened list (lista numerada)  <br />
+    ul = unordened list (lista ordenada)  <br />
+    li = list item (item da lista) </code> <br />
+   
+    <br />
+    Lista ordenada:
+    <OL>
+    <LI>Item número um.</LI>
+    <LI>Item número dois.</LI>
+    <LI>Item número três.</LI>
+    </OL>
+
+   Lista não-ordenada:
+  <UL>
+  <LI>Primeiro item.</LI>
+  <LI>Segundo item.</LI>
+  <LI>Terceiro item.</LI>
+  </UL>
+<small> <a href="#inicio">Inicio</a></small>
+
+</p>
+    <br />
+
+    <h2 id="links" style="color: #610B0B;">Criando links em HTML</h2>
+    <p>
+    A tag <code>&lt;a&gt;</code> pode ser utilizada para criar alguns tipos diferentes de links. Ela pode <br />
+    ser utilizada para criar âncoras, links para dentro da página e links para páginas externas. É  <br />
+    preciso definir alguns atributos para o seu funcionamento. O atributo href é onde colocamos a  <br />
+    URL (endereço do link). Ao clicar nesse link o navegador vai carregar a página informada no href.  <br />
+<br />
+<code>&lt;a href="URL">Texto Exibido&lt;/a&gt;</code> <br /> 
+<br />
+    Para que o link abra em uma nova aba apenas defina o atributo target como _blank: <br />
+  <br />  
+  <code>&lt;a href="URL" target="_blank">Texto Exibido&lt;/a&gt;</code> <br /> <br />
+<br />
+    <strong> SEMPRE </strong> adicione <mark> rel="noreferrer noopener"</mark> ao elemento de âncora quando usar o atributo target: <br />
+<br />
+<code>&lt;a href="URL" target="_blank" rel="noreferrer noopener">Texto Exibido&lt;/a&gt;</code> <br />
+<br />
+   O atributo rel define a relação entre sua página e o URL vinculado. Configurá-lo <br />
+   como noopener noreferrer evita um tipo de phishing conhecido como <u> <strong> <a href="https://en.wikipedia.org/wiki/Tabnabbing" target="_blank" rel="noopener noreferrer" >'tabnabbing'</a> </u> </strong> <br />
+
+<blockquote> <i>
+    Nota: Um URL pode apontar para arquivos HTML, arquivos de texto, imagens, documentos de texto, <br />
+    arquivos de vídeo e áudio e qualquer outra coisa que possa estar na Web. </i>
+</blockquote>
+
+    <small> <a href="#inicio">Inicio</a></small>
+
+</p>
+    <br />
+
+    <h2 id="refencia" style="color: #610B0B">Links de referências</h2>  
+    <p>Retirado de:</p>   
+    
+
+
+<ul>
+        <li><a href="https://developer.mozilla.org/" title="Mozila" target="_blank" rel="noopener noreferrer" ="#">Mozila</a></li>
+<li><a href="https://www.homehost.com.br/blog/tutoriais/html-basico/" title="homehost" target="_blank" rel="noopener noreferrer" ="#">homehost</a></li>
+<li><a href="https://www.ultra64.com.br/o-que-sao-e-quais-as-diferencas-entre-cliente-e-servidor/" title="Ultra64"  target="_blank" rel="noopener noreferrer" ="#">Ultra64</a></li>
+<li><a href="http://www.nce.ufrj.br/ginape/cursohtml/conteudo/listas/ordenada.htm#:~:text=A%20principal%20diferen%C3%A7a%20entre%20a,marcadores%20antes%20de%20cada%20elemento." title="nce" target="_blank" rel="noopener noreferrer" ="#">nce</a></li>
+<li><a href="https://www.freecodecamp.org/portuguese/news/como-usar-o-html-para-abrir-um-link-em-uma-nova-aba/#:~:text=Para%20criar%20um%20link%20em,o%20qual%20voc%C3%AA%20quer%20associar.
+" title="Freecodecamp" target="_blank" rel="noopener noreferrer" ="#">Freecodecamp</a></li>
+
+    </ul>
+
+
+    <small> <mark> <a href="#inicio">Voltar</a> </mark></small> <br /> <br />
+
+</body>
+</html>
+Footer
+© 2022 
